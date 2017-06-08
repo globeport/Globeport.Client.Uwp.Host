@@ -50,7 +50,7 @@ Install-Package Globeport.Client.Uwp.Host
 
 # Usage
 
-1. Add a reference to the following namespace in your xaml control or page
+1. Add a reference to the following namespace in your XAML control or page
 
 ```
 xmlns:globeport="using:Globeport.Client.Uwp.Host"
