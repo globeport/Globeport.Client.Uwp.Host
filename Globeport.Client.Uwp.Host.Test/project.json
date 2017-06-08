@@ -1,6 +1,6 @@
 ﻿{
   "dependencies": {
-    "Globeport.Client.Uwp.Host": "1.0.324",
+    "Globeport.Client.Uwp.Host": "1.0.325",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.3.3"
   },
   "frameworks": {

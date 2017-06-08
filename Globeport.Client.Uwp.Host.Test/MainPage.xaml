@@ -9,17 +9,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="50*"/>
-        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50*"/>
             <ColumnDefinition Width="50*"/>
         </Grid.ColumnDefinitions>
-        <globeport:Element Id="3MNPB7380400"/>
-        <globeport:Element Id="36UJFDKK0400" Grid.Column="1"/>
-        <globeport:Element Id="35VQ9TLS0400" Grid.Row="1"/>
-        <globeport:Element Id="35VUIRT00400" Grid.Row="1" Grid.Column="1"/>
+        <globeport:Element Id="35VQ9TLS0400"/>
+        <globeport:Element Id="35VQ9TLS0400" Grid.Column="1"/>
     </Grid>
 </Page>
