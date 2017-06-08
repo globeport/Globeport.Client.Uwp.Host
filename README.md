@@ -66,9 +66,9 @@ xmlns:globeport="using:Globeport.Client.Uwp.Host"
 
 The element Id can be accessed by clicking `Web Link` on the menu within Globeport. This will open the element in the browser and the Id can then be extracted from the Url e.g.
 
-https://api.globeport.io/v1.0/entities/3MNPCBCG0400/render
+https://api.globeport.io/v1.0/entities/3MNPB7380400/render
 
-The id for this element is **3MNPCBCG0400**
+The id for this element is **3MNPB7380400**
 
 # Feedback
 
