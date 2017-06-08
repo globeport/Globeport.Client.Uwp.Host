@@ -48,3 +48,27 @@ Install-Package Globeport.Client.Uwp.Host
     </Extension>
 </Extensions>
 ```
+
+# Usage
+
+1. Add a reference to the following namespace in your xaml control or page
+
+```
+xmlns:globeport="using:Globeport.Client.Uwp.Host"
+```
+
+2. Add the Globeport Element host control and set its Id property e.g.
+
+```
+<Grid>
+    <globeport:Element Id="3MNPB7380400"/>
+</Grid>
+```
+
+The element Id can be accessed by clicking `Web Link` on the menu within Globeport. This will open the element in the browser and the Id can then be extracted from the Url e.g.
+
+https://api.globeport.io/v1.0/entities/3MNPCBCG0400/render
+
+The id is **3MNPCBCG0400**
+
+
