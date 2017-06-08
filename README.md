@@ -17,6 +17,12 @@ Install-Package Globeport.Client.Uwp.Host
 ```
 <Extensions>
     <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>Lumia.Imaging.dll</Path>
+        <ActivatableClass ActivatableClassId="Lumia.Imaging.BufferProviderImageSource" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
         <InProcessServer>
             <Path>libsodium-uwp.dll</Path>
             <ActivatableClass ActivatableClassId="Sodium.Core" ThreadingModel="both" />
