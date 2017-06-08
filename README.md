@@ -23,8 +23,7 @@ Install-Package Globeport.Client.Uwp.Host
       </InProcessServer>
     </Extension>
     <Extension Category="windows.activatableClass.inProcessServer">
-        <InProcessServer>
-            <Path>libsodium-uwp.dll</Path>
+        <InProcessServer>            <Path>libsodium-uwp.dll</Path>
             <ActivatableClass ActivatableClassId="Sodium.Core" ThreadingModel="both" />
             <ActivatableClass ActivatableClassId="Sodium.CryptoHash" ThreadingModel="both" />
             <ActivatableClass ActivatableClassId="Sodium.GenericHash" ThreadingModel="both" />
@@ -69,6 +68,8 @@ The element Id can be accessed by clicking `Web Link` on the menu within Globepo
 
 https://api.globeport.io/v1.0/entities/3MNPCBCG0400/render
 
-The id is **3MNPCBCG0400**
+The id for this element is **3MNPCBCG0400**
 
+# Feedback
 
+Please let me know your thoughts on this and if you'd like to help build the platform please let me know. Thanks, Stuart.
