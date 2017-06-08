@@ -24,7 +24,7 @@ namespace Globeport.Client.Uwp.Host.Test
     {
         public MainPage()
         {
-            this.InitializeComponent();
+            this.InitializeComponent(); 
         }
     }
 }
