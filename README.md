@@ -8,5 +8,37 @@ This is a test project demonstrating the use of the Globeport Elements UWP nativ
 
 1. Install the Nuget package
 
-`Install-Package Globeport.Client.Uwp.Host`
+```
+Install-Package Globeport.Client.Uwp.Host
+```
 
+2. Add the following extensions to the `Package.appxmanifest` file in your project (hoping to automate this step in a future release.
+
+```
+<Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+        <InProcessServer>
+            <Path>libsodium-uwp.dll</Path>
+            <ActivatableClass ActivatableClassId="Sodium.Core" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.CryptoHash" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.GenericHash" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.GenericHashAlgorithmProvider" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.GenericHashAlgorithmNames" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.KDF" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.KeyPair" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.OneTimeAuth" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.PasswordHash" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.PublicKeyAuth" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.PublicKeyBox" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.ScalarMult" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.SealedPublicKeyBox" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.SecretBox" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.SecretKeyAuth" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.SecretAead" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.ShortHash" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.StreamEncryption" ThreadingModel="both" />
+            <ActivatableClass ActivatableClassId="Sodium.Utilities" ThreadingModel="both" />
+        </InProcessServer>
+    </Extension>
+</Extensions>
+```
