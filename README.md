@@ -9,6 +9,7 @@ This is a test project demonstrating the use of the Globeport Elements UWP nativ
 1. Install the Nuget package
 
 ```
+
 Install-Package Globeport.Client.Uwp.Host
 ```
 
@@ -18,7 +19,8 @@ Install-Package Globeport.Client.Uwp.Host
 <Extensions>
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
-        <Path>Lumia.Imaging.dll</Path>
+
+<Path>Lumia.Imaging.dll</Path>
         <ActivatableClass ActivatableClassId="Lumia.Imaging.BufferProviderImageSource" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
@@ -73,3 +75,9 @@ The id for this element is **3MNPB7380400**
 # Feedback
 
 Please let me know your thoughts on this and if you'd like to help build the platform please let me know. Thanks, Stuart.
+
+# Screenshots
+
+A collage of native Globeport elements embedded in a UWP app.
+
+![alt text](https://github.com/globeport/Globeport.Client.Uwp.Host/blob/master/screenshot.jpg "Globeport Elements")
