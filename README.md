@@ -58,7 +58,7 @@ Add a reference to the following namespace in your XAML control or page
 xmlns:globeport="using:Globeport.Client.Uwp.Host"
 ```
 
-##Elements
+## Elements
 
 Add a Globeport Element and set its Id property e.g.
 
@@ -74,7 +74,7 @@ https://api.globeport.io/v1.0/entities/3MNPB7380400/render
 
 So the Id for this element is **3MNPB7380400**
 
-##Controls
+## Controls
 
 Add a Globeport Control and set its Id property e.g.
 
