@@ -101,16 +101,21 @@ Both controls expose the following API. You will have to refer to the respective
 
 ### Properties
 
-`string Id { get; set; } - Sets the unique instance Id for the control/element. Refer to above for details on how to find this.`
+`string Id { get; set; }` 
+- Sets the unique instance Id for the control/element. Refer to above for details on how to find this.
 
 ### Methods
 
-`object GetProperty(string name) - Gets a property value by name. e.g. GetProperty("Color")`
-`void SetProperty(string name, object value) - Sets a property value by name. e.g. SetProperty("Color", "#000000")`
+`object GetProperty(string name)` 
+- Gets a property value by name. e.g. GetProperty("Color")
+
+`void SetProperty(string name, object value)`
+- Sets a property value by name. e.g. SetProperty("Color", "#000000")
 
 ### Events
 
-`event EventHandler<DataObject> EventRaised - can be invoked by a control/element e.g. ColorChanged. The DataObject type represents a JSON object`
+`event EventHandler<DataObject> EventRaised`
+- can be invoked by a control/element e.g. ColorChanged. The DataObject type represents a JSON object
 
 # Feedback
 
