@@ -94,7 +94,7 @@ The control Id can currently be accessed by clicking the 'Edit' button on the re
 
 https://api.globeport.io/v1.0/resources/3OST61540400/render
 
-So the Id for this element is **3OST61540400**
+So the Id for this control is **3OST61540400**
 
 
 # API
