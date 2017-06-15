@@ -80,4 +80,4 @@ Please let me know your thoughts on this and if you'd like to help build the pla
 
 A collage of native Globeport elements embedded in a UWP app.
 
-![alt text](https://github.com/globeport/Globeport.Client.Uwp.Host/blob/master/screenshot.jpg "Globeport Elements")
+![alt text](https://github.com/globeport/Globeport.Client.Uwp.Host/blob/master/screenshot.png "Globeport Elements")
