@@ -14,12 +14,20 @@
             <ColumnDefinition Width="50*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="50*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="45*"/>
         </Grid.RowDefinitions>
-        <globeport:Element Id="35VQ9TLS0400"/>
-        <globeport:Element Id="3MNPB7380400" Grid.Column="1"/>
-        <globeport:Element Id="36UJFDKK0400" Grid.Row="1"/>
-        <globeport:Element Id="35VUIRT00400" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="ColorButton" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" RequestedTheme="Dark" Background="Black" Grid.ColumnSpan="2" Content="Show Color Chooser..." Foreground="White" FontSize="20">
+            <Button.Flyout>
+                <Flyout x:Name="ColorFlyout">
+                    <globeport:Control Id="3OST61540400" EventRaised="Control_EventRaised"/>
+                </Flyout>
+            </Button.Flyout>
+        </Button>
+        <globeport:Element Id="35VQ9TLS0400" Grid.Row="1"/>
+        <globeport:Element Id="3MNPB7380400" Grid.Row="1" Grid.Column="1"/>
+        <globeport:Element Id="36UJFDKK0400" Grid.Row="2"/>
+        <globeport:Element Id="35VUIRT00400" Grid.Row="2" Grid.Column="1"/>
     </Grid>
 </Page>
