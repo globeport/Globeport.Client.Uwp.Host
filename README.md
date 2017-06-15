@@ -52,13 +52,15 @@ Install-Package Globeport.Client.Uwp.Host
 
 # Usage
 
-1. Add a reference to the following namespace in your XAML control or page
+Add a reference to the following namespace in your XAML control or page
 
 ```
 xmlns:globeport="using:Globeport.Client.Uwp.Host"
 ```
 
-2. Add the Globeport Element host control and set its Id property e.g.
+##Elements
+
+Add a Globeport Element and set its Id property e.g.
 
 ```
 <Grid>
@@ -70,7 +72,28 @@ The element Id can be accessed by clicking `Web Link` on the menu within Globepo
 
 https://api.globeport.io/v1.0/entities/3MNPB7380400/render
 
-The id for this element is **3MNPB7380400**
+So the Id for this element is **3MNPB7380400**
+
+##Controls
+
+Add a Globeport Control and set its Id property e.g.
+
+```
+<Button>
+    <Button.Flyout>
+        <Flyout>
+            //a color picker
+            <globeport:Control x:Name="ColorPicker" Id="3OST61540400" EventRaised="ColorPicker_EventRaised"/>
+        <Flyout>
+    </Button.Flyout>
+</Button>
+```
+
+The control Id can currently be accessed by clicking the 'Edit' button on the resource toolbar within Globeport Elements. This will display the resource Url e.g.
+
+https://api.globeport.io/v1.0/resources/3OST61540400/render
+
+So the Id for this element is **3OST61540400**
 
 # Feedback
 
