@@ -10,7 +10,6 @@ This project demonstrates the use of the Globeport Elements UWP native host. Glo
 1. Install the Nuget package
 
 ```
-
 Install-Package Globeport.Client.Uwp.Host
 ```
 
