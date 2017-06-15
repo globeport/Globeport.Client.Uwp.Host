@@ -90,7 +90,7 @@ Add a Globeport Control and set its Id property e.g.
 </Button>
 ```
 
-The control Id can currently be accessed by clicking the 'Edit' button on the resource toolbar within Globeport Elements. This will display the resource Url e.g.
+The control Id can currently be accessed by clicking the `Edit` button on the resource toolbar within Globeport Elements. This will display the resource Url e.g.
 
 https://api.globeport.io/v1.0/resources/3OST61540400/render
 
