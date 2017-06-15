@@ -132,4 +132,4 @@ www.globeport.io
 
 A collage of native Globeport elements embedded in a UWP app.
 
-![alt text](https://github.com/globeport/Globeport.Client.Uwp.Host/blob/master/screenshot.png "Globeport Elements")
+![Globeport Host Screenshot](https://github.com/globeport/Globeport.Client.Uwp.Host/blob/master/screenshot.png "Globeport Elements")
