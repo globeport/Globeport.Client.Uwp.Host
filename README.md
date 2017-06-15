@@ -95,6 +95,23 @@ https://api.globeport.io/v1.0/resources/3OST61540400/render
 
 So the Id for this element is **3OST61540400**
 
+# API
+
+Both controls expose the following API. You will have to refer to the respective control/element within Globeport Elements for details of its internal implementation.
+
+### Properties
+
+`string Id { get; set; } - Set the instance Id for the control/element`
+
+### Methods
+
+`object GetProperty(string name) - Gets a property value by name. e.g. GetProperty("Color")`
+`void SetProperty(string name, object value) - Sets a property value by name. e.g. SetProperty("Color", "#000000")`
+
+### Events
+
+`event EventHandler<DataObject> EventRaised - can be invoked by a control/element e.g. ColorChanged. The DataObject type represents a JSON object`
+
 # Feedback
 
 Please let me know your thoughts on this and if you'd like to help build the platform please let me know. Thanks, Stuart.
