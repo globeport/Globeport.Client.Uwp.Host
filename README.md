@@ -122,7 +122,7 @@ Both controls expose the following API. You will have to refer to the respective
 
 # Feedback
 
-Please let me know your thoughts on this and if you'd like to help build the platform please let me know. Thanks, Stuart.
+Please let me know your thoughts on this and if you'd like to help build the platform please let me know. Thanks, Stuart (stuart@globeport.io)
 
 
 # Screenshots
