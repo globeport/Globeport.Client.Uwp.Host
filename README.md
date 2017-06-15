@@ -4,6 +4,7 @@ This project demonstrates the use of the Globeport Elements UWP native host. Glo
 
 [Globeport Elements](https://www.microsoft.com/en-gb/store/p/globeport-elements/9nblggh4whtb) is an integrated development environment available on the Windows Store (currently in preview).It enables realtime development of interactive components with live preview and instant submissions. It is designed to be familiar to Windows developers although a minimal working knowledge of javascript is required. Once submitted, elements can be hosted within the [Globeport social network](https://www.microsoft.com/en-gb/store/p/globeport/9nblggh6jzc3), within your own native UWP applications and in the browser. Native hosts for other platforms are in the pipeline!
 
+
 # Nuget Installation
 
 1. Install the Nuget package
@@ -50,6 +51,7 @@ Install-Package Globeport.Client.Uwp.Host
 </Extensions>
 ```
 
+
 # Usage
 
 Add a reference to the following namespace in your XAML control or page
@@ -95,6 +97,7 @@ https://api.globeport.io/v1.0/resources/3OST61540400/render
 
 So the Id for this element is **3OST61540400**
 
+
 # API
 
 Both controls expose the following API. You will have to refer to the respective control/element within Globeport Elements for details of its internal implementation.
@@ -115,11 +118,13 @@ Both controls expose the following API. You will have to refer to the respective
 ### Events
 
 `event EventHandler<DataObject> EventRaised`
-- can be invoked by a control/element e.g. ColorChanged. The DataObject type represents a JSON object
+- a custom event that can be invoked by a control or element e.g. ColorChanged. The DataObject type encapsulates a JSON object
+
 
 # Feedback
 
 Please let me know your thoughts on this and if you'd like to help build the platform please let me know. Thanks, Stuart.
+
 
 # Screenshots
 
