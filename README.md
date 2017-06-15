@@ -101,7 +101,7 @@ Both controls expose the following API. You will have to refer to the respective
 
 ### Properties
 
-`string Id { get; set; } - Set the instance Id for the control/element`
+`string Id { get; set; } - Sets the unique instance Id for the control/element. Refer to above for details on how to find this.`
 
 ### Methods
 
