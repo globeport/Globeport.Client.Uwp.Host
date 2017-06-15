@@ -125,6 +125,7 @@ Both controls expose the following API. You will have to refer to the respective
 Please let me know your thoughts on this and if you'd like to help build the platform please let me know. Thanks, Stuart.
 
 stuart@globeport.io
+
 www.globeport.io
 
 # Screenshots
