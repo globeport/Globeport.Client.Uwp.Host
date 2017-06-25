@@ -71,7 +71,7 @@ Add a Globeport Element and set its Id property e.g.
 
 The element Id can be accessed by clicking `Web Link` on the menu within Globeport. This will open the element in the browser and the Id can then be extracted from the Url e.g.
 
-https://api.globeport.io/v1.0/entities/3MNPB7380400/render
+http://www.globeport.io/entities/3MNPB7380400
 
 So the Id for this element is **3MNPB7380400**
 
@@ -92,7 +92,7 @@ Add a Globeport Control and set its Id property e.g.
 
 The control Id can currently be accessed by clicking the `Edit` button on the resource toolbar within Globeport Elements. This will display the resource Url e.g.
 
-https://api.globeport.io/v1.0/resources/3OST61540400/render
+http://www.globeport.io/resources/3OST61540400
 
 So the Id for this control is **3OST61540400**
 
