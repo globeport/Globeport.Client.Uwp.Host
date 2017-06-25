@@ -2,14 +2,14 @@
 
 This project demonstrates the use of the Globeport Elements UWP native host. Globeport is a new platform built on a zero knowledge framework, enabling rapid development of cross platform, interactive content, powered by XAML and Javascript. 
 
-[Globeport Elements](https://www.microsoft.com/en-gb/store/p/globeport-elements/9nblggh4whtb) is an integrated development environment available on the Windows Store (currently in preview).It enables realtime development of interactive components with live preview and instant submissions. It is designed to be familiar to Windows developers although a minimal working knowledge of javascript is required. Once submitted, elements can be hosted within the [Globeport social network](https://www.microsoft.com/en-gb/store/p/globeport/9nblggh6jzc3), within your own native UWP applications and in the browser. Native hosts for other platforms are in the pipeline!
+[Globeport Elements](https://www.microsoft.com/en-gb/store/p/globeport-elements/9nblggh4whtb) is an integrated development environment available on the Windows Store (currently in preview). It enables realtime development of interactive components with live preview and instant submissions. It is designed to be familiar to Windows developers although a minimal working knowledge of javascript is required. Once submitted, elements can be hosted within the [Globeport social network](https://www.microsoft.com/en-gb/store/p/globeport/9nblggh6jzc3), within your own native UWP applications and in the browser. Native hosts for other platforms are in the pipeline!
+
 
 # Nuget Installation
 
 1. Install the Nuget package
 
 ```
-
 Install-Package Globeport.Client.Uwp.Host
 ```
 
@@ -50,15 +50,18 @@ Install-Package Globeport.Client.Uwp.Host
 </Extensions>
 ```
 
+
 # Usage
 
-1. Add a reference to the following namespace in your XAML control or page
+Add a reference to the following namespace in your XAML control or page
 
 ```
 xmlns:globeport="using:Globeport.Client.Uwp.Host"
 ```
 
-2. Add the Globeport Element host control and set its Id property e.g.
+## 1. Elements
+
+Add a Globeport Element and set its Id property e.g.
 
 ```
 <Grid>
@@ -68,16 +71,65 @@ xmlns:globeport="using:Globeport.Client.Uwp.Host"
 
 The element Id can be accessed by clicking `Web Link` on the menu within Globeport. This will open the element in the browser and the Id can then be extracted from the Url e.g.
 
-https://api.globeport.io/v1.0/entities/3MNPB7380400/render
+http://www.globeport.io/entities/3MNPB7380400
 
-The id for this element is **3MNPB7380400**
+So the Id for this element is **3MNPB7380400**
+
+## 2. Controls
+
+Add a Globeport Control and set its Id property e.g.
+
+```
+<Button>
+    <Button.Flyout>
+        <Flyout>
+            //a color picker
+            <globeport:Control x:Name="ColorPicker" Id="3OST61540400" EventRaised="ColorPicker_EventRaised"/>
+        <Flyout>
+    </Button.Flyout>
+</Button>
+```
+
+The control Id can currently be accessed by clicking the `Edit` button on the resource toolbar within Globeport Elements. This will display the resource Url e.g.
+
+http://www.globeport.io/resources/3OST61540400
+
+So the Id for this control is **3OST61540400**
+
+
+# API
+
+Both controls expose the following API. You will have to refer to the respective control/element within Globeport Elements for details of its internal implementation.
+
+### Properties
+
+`string Id { get; set; }` 
+- Sets the unique instance Id for the control/element. Refer to above for details on how to find this.
+
+### Methods
+
+`object GetProperty(string name)` 
+- Gets a property value by name. e.g. GetProperty("Color")
+
+`void SetProperty(string name, object value)`
+- Sets a property value by name. e.g. SetProperty("Color", "#000000")
+
+### Events
+
+`event EventHandler<DataObject> EventRaised`
+- a custom event that can be invoked by a control or element e.g. ColorChanged. The DataObject type encapsulates a JSON object
+
 
 # Feedback
 
 Please let me know your thoughts on this and if you'd like to help build the platform please let me know. Thanks, Stuart.
 
+stuart@globeport.io
+
+www.globeport.io
+
 # Screenshots
 
 A collage of native Globeport elements embedded in a UWP app.
 
-![alt text](https://github.com/globeport/Globeport.Client.Uwp.Host/blob/master/screenshot.jpg "Globeport Elements")
+![Globeport Host Screenshot](https://github.com/globeport/Globeport.Client.Uwp.Host/blob/master/screenshot.png "Globeport Elements")
