@@ -75,6 +75,12 @@ http://www.globeport.io/entities/3MNPB7380400
 
 So the Id for this element is **3MNPB7380400**
 
+Elements are designed with 3 view modes: Edit, Card and View. The mode can be added to the query string to the url e.g.
+
+http://www.globeport.io/entities/3MNPB7380400?mode=edit
+
+Please note that the web host is currently in preview - all elements are readonly at present.
+
 ## 2. Controls
 
 Add a Globeport Control and set its Id property e.g.
